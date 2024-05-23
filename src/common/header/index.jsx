@@ -4,6 +4,7 @@ import logo from '../../assets/logo/logo.png'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import { CgMenuLeft } from "react-icons/cg";
 
 export default function Header() {
     return (
@@ -23,6 +24,9 @@ export default function Header() {
                     <div className="contect">
                         <a href="https://www.linkedin.com/in/yash-babariya-a370b52a5/" target='_blank'><FaLinkedin size={30} className='icon linkdin' /></a>
                         <a href="https://github.com/yash-babariya" target='_blank'><FaGithubSquare size={30} className='icon github' /></a>
+                    </div>
+                    <div className="mobile-menu-icon">
+                        <CgMenuLeft  className='icon'/>
                     </div>
                 </header>
             </div>
