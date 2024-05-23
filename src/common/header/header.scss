@@ -1,0 +1,66 @@
+@import '../../styles/index.scss';
+
+.header {
+    padding: 20px 0;
+    background-color: var(--theme-white-background);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+    .container {
+        header {
+            @include space-between;
+
+            .logo {
+                width: 150px;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .menu {
+
+                .active {
+                    background-color: var(--theme-pink-background);
+                    color: var(--theme-white-text);
+                }
+
+                a {
+                    padding: 8px 12px;
+                    border-radius: 5px;
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    color: var(--theme-black-text);
+                    margin: 0 5px;
+                    text-transform: capitalize;
+                }
+            }
+
+            .contect {
+                .icon {
+                    font-size: 20px;
+                    cursor: pointer;
+                    margin: 0 5px;
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: 0.3s ease-in-out;
+                    }
+
+                    &.linkdin {
+                        color: #0077b5;
+                    }
+
+                    &.github {
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+}
