@@ -38,11 +38,6 @@
         }
     }
 
-
-    .container {
-        padding: 20px;
-    }
-
     .sidenav.open {
         width: 250px;
     }
@@ -52,7 +47,7 @@
             @include space-between;
 
             .logo {
-                width: 150px;
+                width: 120px;
                 cursor: pointer;
 
                 img {
