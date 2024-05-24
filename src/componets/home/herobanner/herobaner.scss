@@ -4,4 +4,33 @@
     width: 100%;
     height: calc(100vh - $header-height);
     background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+
+    .container {
+        width: 100%;
+        height: 100%;
+
+        section {
+            height: 100%;
+            @include grid-2-columns;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            .logo {
+                img {
+                    width: 500px;
+                }
+            }
+
+            .hero-text {
+                @include flex;
+            }
+
+            .hero-buttons {
+                @include flex;
+                gap: 20px;
+            }
+        }
+    }
 }

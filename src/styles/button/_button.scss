@@ -1,0 +1,23 @@
+// Base button style
+button {
+    @include flex;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.375;
+    border-radius: 40px;
+    border: 3px solid transparent;
+}
+
+// Modifier for button with solid background
+button.solid {
+    background-color: var(--theme-gray-800-background);
+    color: var(--theme-white-text);
+}
+
+// Modifier for button with border
+button.border {
+    background-color: transparent;
+    border: 3px solid var(--theme-gray-800-background);
+    color: var(--theme-gray-800-text);
+}
