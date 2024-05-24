@@ -67,11 +67,11 @@ export default function Header() {
                         ))}
                     </div>
                     <div className="contact">
-                        <a className='linkdin' href="https://www.linkedin.com/in/yash-babariya-a370b52a5/" target='_blank' rel="noopener noreferrer">
-                            <FaLinkedin size={30} className='icon' />
+                        <a href="https://www.linkedin.com/in/yash-babariya-a370b52a5/" target='_blank' rel="noopener noreferrer">
+                            <FaLinkedin size={30} className='icon linkdin' />
                         </a>
-                        <a className='github' href="https://github.com/yash-babariya" target='_blank' rel="noopener noreferrer">
-                            <FaGithubSquare size={30} className='icon' />
+                        <a href="https://github.com/yash-babariya" target='_blank' rel="noopener noreferrer">
+                            <FaGithubSquare size={30} className='icon github' />
                         </a>
                     </div>
                     <div className="mobile-menu-icon">
