@@ -1,10 +1,52 @@
 @import '../../styles/index.scss';
 
 .header {
+    position: relative;
     padding: 20px 0;
     background-color: var(--theme-white-background);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     height: var(--header-height);
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: var(--theme-dark-background);
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+        z-index: 1000;
+
+
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        a {
+
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 20px;
+            color: var(--theme-gray-100-border);
+            display: block;
+            transition: 0.3s;
+        }
+    }
+
+
+    .container {
+        padding: 20px;
+    }
+
+    .sidenav.open {
+        width: 250px;
+    }
 
     .container {
         header {
@@ -46,15 +88,6 @@
             }
 
             .contact {
-
-                .linkdin {
-                    color: #0077b5;
-                }
-
-                .github {
-                    color: #333;
-                }
-
                 .icon {
                     font-size: 20px;
                     cursor: pointer;
@@ -66,12 +99,21 @@
                         transform: scale(1.1);
                         transition: 0.3s ease-in-out;
                     }
+
+                    &.linkdin {
+                        color: #0077b5;
+                    }
+
+                    &.github {
+                        color: #333;
+                    }
                 }
 
                 @media (max-width:768px) {
                     display: none;
 
                 }
+
             }
 
             .mobile-menu-icon {
