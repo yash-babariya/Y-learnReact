@@ -66,6 +66,7 @@ export default function Header() {
                 <Link className="closebtn" onClick={closeNav}>&times;</Link>
                 {menuItems.map((item) => (
                     <NavLink
+                        onClick={closeNav}
                         key={item.path}
                         to={item.path}
                         className={({ isActive }) => (isActive ? "active" : "")}
@@ -102,7 +103,7 @@ export default function Header() {
                     <div onClick={openNav} className="mobile-menu-icon">
                         <CgMenuLeft className='icon' />
                     </div>
-                    
+
                 </header>
             </div>
         </div>
