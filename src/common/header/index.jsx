@@ -63,6 +63,7 @@ export default function Header() {
     return (
         <div className="header">
             <div className={`sidenav ${isNavOpen ? 'open' : ''}`}>
+
                 <Link className="closebtn" onClick={closeNav}>&times;</Link>
                 {menuItems.map((item) => (
                     <NavLink
@@ -74,6 +75,8 @@ export default function Header() {
                         {item.label}
                     </NavLink>
                 ))}
+
+
             </div>
             <div className="container">
                 <header>
