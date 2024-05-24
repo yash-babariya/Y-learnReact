@@ -11,7 +11,6 @@ export default function HeroBanner() {
                         <img src={logo} alt="logo" />
                     </div>
                     <div className="hero-text">
-
                         <div className="hero-buttons">
                             <button className='solid'>Learn More</button>
                             <button className='border'>Get Started</button>
