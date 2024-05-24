@@ -1,0 +1,7 @@
+@import '../../../styles/index.scss';
+
+.hero-banner {
+    width: 100%;
+    height: calc(100vh - $header-height);
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
