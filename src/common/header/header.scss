@@ -18,6 +18,12 @@
         padding-top: 60px;
         transition: 0.5s;
         z-index: 1000;
+        display: none;
+
+        @media (max-width:768px) {
+            display: block;
+
+        }
 
 
         .closebtn {
@@ -37,10 +43,10 @@
             display: block;
             transition: 0.3s;
         }
-    }
 
-    .sidenav.open {
-        width: 250px;
+        &.open {
+            width: 250px;
+        }
     }
 
     .container {
