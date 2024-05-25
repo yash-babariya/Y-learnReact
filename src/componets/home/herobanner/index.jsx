@@ -12,7 +12,7 @@ export default function HeroBanner() {
                             <img src={logo} alt="logo" />
                         </div>
                         <div className="haeding">
-                            <h1>Build <span>Reusable</span> Frontend Components in 3 Minutes</h1>
+                            <h1>why learn <span>React ?</span></h1>
                         </div>
                     </div>
                     <div className="hero-buttons">

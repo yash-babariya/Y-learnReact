@@ -14,12 +14,36 @@
             @include flex-column;
             gap: 50px;
 
+            @media (max-width:768px) {
+                gap: 20px;
+            }
+
             .hero-text {
                 @include flex-column;
                 gap: 30px;
 
+                @media (max-width:768px) {
+                    gap: 20px;
+                }
+
+                @media (max-width:576px) {
+                    gap: 10px;
+                }
+
                 .logo {
                     width: 500px;
+
+                    @media (max-width:768px) {
+                        width: 350px;
+                    }
+
+                    @media (max-width:576px) {
+                        width: 250px;
+                    }
+
+                    @media (max-width:400px) {
+                        width: 200px;
+                    }
 
                     img {
                         width: 100%;
@@ -33,6 +57,18 @@
                         font-weight: 300;
                         font-size: 80px;
 
+                        @media (max-width:768px) {
+                            font-size: 60px;
+                        }
+
+                        @media (max-width:576px) {
+                            font-size: 50px;
+                        }
+
+                        @media (max-width:400px) {
+                            font-size: 30px;
+                        }
+
                         span {
                             font-weight: 700;
                             color: var(--theme-red-text);
@@ -44,6 +80,11 @@
             .hero-buttons {
                 @include flex;
                 gap: 20px;
+
+                @media (max-width:576px) {
+                    @include flex-column;
+                    gap: 10px;
+                }
             }
         }
     }
