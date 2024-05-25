@@ -1,5 +1,6 @@
 // Base button style
 button {
+    cursor: pointer;
     @include flex;
     padding: 12px 24px;
     font-size: 20px;

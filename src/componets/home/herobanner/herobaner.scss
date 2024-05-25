@@ -11,20 +11,34 @@
 
         section {
             height: 100%;
-            @include grid-2-columns;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-
-            .logo {
-                img {
-                    width: 500px;
-                }
-            }
+            @include flex-column;
+            gap: 50px;
 
             .hero-text {
-                @include flex;
+                @include flex-column;
+                gap: 30px;
+
+                .logo {
+                    width: 500px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+
+                .haeding {
+                    h1 {
+                        text-align: center;
+                        font-weight: 300;
+                        font-size: 80px;
+
+                        span {
+                            font-weight: 700;
+                            color: var(--theme-red-text);
+                        }
+                    }
+                }
             }
 
             .hero-buttons {
