@@ -80,12 +80,6 @@
             .hero-buttons {
                 @include flex;
                 gap: 20px;
-
-                @media (max-width:576px) {
-                    width: 100%;
-                    @include flex-column;
-                    gap: 10px;
-                }
             }
         }
     }
