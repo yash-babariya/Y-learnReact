@@ -1,6 +1,7 @@
 import React from 'react'
 import './herobaner.scss'
 import logo from '../../../assets/logo/logo.png'
+import { Link } from 'react-router-dom'
 
 export default function HeroBanner() {
     return (
@@ -16,7 +17,7 @@ export default function HeroBanner() {
                         </div>
                     </div>
                     <div className="hero-buttons">
-                        <button className='solid'>Learn More</button>
+                        <Link to="/learnMore"><button className='solid'>Learn More</button></Link>
                         <button className='border'>Get Started</button>
                     </div>
                 </section>

@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import DefaultLayout from "./defaultLayout/defaultlayout";
 import Home from "../componets/home";
 import Routes from "../componets/routes";
+import LearnMore from "../componets/learn-more";
+import Hooks from "../componets/hooks";
 
 const router = createBrowserRouter([
     {
@@ -18,7 +20,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/hookes",
-                element: <div>Hookes</div>,
+                element: <Hooks />,
             },
             {
                 path: "/redux",
@@ -28,6 +30,10 @@ const router = createBrowserRouter([
                 path: "/api",
                 element: <div>Api</div>,
             },
+            {
+                path: "/learnMore",
+                element: <LearnMore />,
+            }
         ],
         errorElement: <div>404 Error!</div>,
     },
