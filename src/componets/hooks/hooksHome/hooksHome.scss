@@ -1,1 +1,69 @@
 @import '../../../styles/index.scss';
+
+
+.hookes-home {
+    padding: 80px 0;
+
+    .container {
+        section {
+            .heading {
+                h2 {
+                    font-size: 40px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    color: var(--theme-dark-muted-text);
+                }
+
+                h5 {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: var(--theme-gray-800-text);
+                }
+            }
+
+            .hooks-types {
+                .heading {
+                    h3 {
+                        padding-top: 40px;
+                        font-size: 32px;
+                        font-weight: 600;
+                        padding-bottom: 50px;
+                        text-align: center;
+                        color: var(--theme-dark-muted-text);
+                        text-transform: capitalize;
+                    }
+                }
+
+                .hooks-box {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 40px;
+
+                    .box {
+                        width: 100%;
+                        height: 100px;
+                        @include flex;
+                        box-shadow: -2px 3px 12px -4px rgba(0, 0, 0, 1);
+                        cursor: pointer;
+                        border-radius: 20px;
+                        background-color: var(--theme-gray-900-background);
+
+                        h3 {
+                            font-size: 28px;
+                            font-weight: 600;
+                            color: var(--theme-warning-text);
+                            letter-spacing: 1.5px;
+                            
+                        }
+                        &:hover{
+                            background-color: var(--theme-gray-200-background);
+                            h3{
+                            color: var(--theme-black-text);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
