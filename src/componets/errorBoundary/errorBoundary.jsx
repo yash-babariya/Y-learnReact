@@ -1,34 +1,30 @@
-import React from "react";
-import "./ErrorBoundry.scss";
-import Angry from "../../assets/images/angry-man.webp";
+import React from 'react';
+import { ErrorBoundary as ReactErrorBoundary } from 'react-error-boundary';
+import './ErrorBoundary.scss';
 
-class ErrorBoundary extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { hasError: false };
-    }
+const ErrorFallback = ({ error }) => (
+    <div className="error-section">
+        <div className="container">
+            <section>
+                <h3>Page is broken!</h3>
+                <span className="error-pre">
+                    Error: {error.message}
+                </span>
+                <p>{error.stack}</p>
+            </section>
+        </div>
+    </div>
+);
 
-    static getDerivedStateFromError(error) {
-        console.log("object", error);
-        return { hasError: true, err: error };
-    }
-
-    render() {
-        if (this.state.hasError) {
-            return (
-                <div className="error_section">
-                    <h1>Hag diya gaaandu !!</h1>
-                    <img src={Angry} alt="angry" height="200px" />
-                    <pre className="error_pre">
-                        Error : {`${this.state.err["message"]}`}
-                    </pre>
-                    <pre>{`${this.state.err["stack"]}`}</pre>
-                </div>
-            );
-        }
-
-        return this.props.children;
-    }
-}
+const ErrorBoundary = ({ children }) => (
+    <ReactErrorBoundary
+        FallbackComponent={ErrorFallback}
+        onError={(error, errorInfo) => {
+            console.log('Error:', error, 'Error Info:', errorInfo);
+        }}
+    >
+        {children}
+    </ReactErrorBoundary>
+);
 
 export default ErrorBoundary;
