@@ -4,6 +4,7 @@ import Home from "../componets/home";
 import Routes from "../componets/routes";
 import LearnMore from "../componets/learn-more";
 import Hooks from "../componets/hooks";
+import Error from "../componets/error";
 
 const router = createBrowserRouter([
     {
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
                 element: <LearnMore />,
             }
         ],
-        errorElement: <div>404 Error!</div>,
+        errorElement: <Error />,
     },
 ]);
 

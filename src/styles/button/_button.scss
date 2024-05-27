@@ -25,6 +25,11 @@ button.solid {
     color: var(--theme-white-text);
 }
 
+button.solidRed {
+    background-color: var(--theme-danger-background);
+    color: var(--theme-white-text);
+}
+
 // Modifier for button with border
 button.border {
     background-color: transparent;
