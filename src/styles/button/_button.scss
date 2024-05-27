@@ -17,6 +17,14 @@ button {
         line-height: 1.5;
         border: 2px solid transparent;
     }
+
+    @media (max-width:400px) {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 6px 12px;
+        line-height: 1.5;
+        border: 2px solid transparent;
+    }
 }
 
 // Modifier for button with solid background
@@ -38,5 +46,9 @@ button.border {
 
     @media (max-width:768px) {
         border: 2px solid var(--theme-gray-800-background);
+    }
+
+    @media (max-width:400px) {
+        border: 1px solid var(--theme-gray-800-background);
     }
 }
