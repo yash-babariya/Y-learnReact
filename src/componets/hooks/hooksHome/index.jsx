@@ -1,5 +1,6 @@
 import React from 'react';
 import './hooksHome.scss'
+import { MdTouchApp } from "react-icons/md";
 
 
 export default function HooksHome() {
@@ -9,46 +10,46 @@ export default function HooksHome() {
                 <section>
                     <div className="heading">
                         <h2>React Hooks</h2>
-                        <h5>A React hook is a special function in React that allows you to use state and other React
+                    </div>
+                    <div className="contant">
+                        <p>A React hook is a special function in React that allows you to use state and other React
                             features in functional components. Hooks enable you to manage component state, handle
-                            side effects, and reuse logic across components without needing to write class components. </h5>
+                            side effects, and reuse logic across components without needing to write class components. </p>
                     </div>
                     <div className="hooks-types">
-                        <div className="heading">
+                        <div className="heading-hooks">
                             <h3>type of hooks</h3>
-
                         </div>
                         <div className="hooks-box">
-                            <div className="box">
-                                <h3>UseState</h3>
-                               
+                            <div className="type">
+                                <h3>UseState <MdTouchApp className='icons' /></h3>
                             </div>
-                            <div className="box">
-                                <h3>UseEffect</h3>
+                            <div className="type">
+                                <h3>UseEffect <MdTouchApp className='icons' /></h3>
                             </div>
-                            <div className="box">
-                                <h3>UseContext</h3>
+                            <div className="type">
+                                <h3>UseContext <MdTouchApp className='icons' /></h3>
                             </div>
-                            <div className="box">
-                                <h3>UseReducer</h3>
+                            <div className="type">
+                                <h3>UseReducer <MdTouchApp className='icons' /></h3>
                             </div>
-                            <div className="box">
-                                <h3>UseCallback</h3>
+                            <div className="type">
+                                <h3>UseCallback <MdTouchApp className='icons' /></h3>
                             </div>
-                            <div className="box">
-                                <h3>UseMemo</h3>
+                            <div className="type">
+                                <h3>UseMemo <MdTouchApp className='icons' /></h3>
                             </div>
-                            <div className="box">
-                                <h3>UseRef</h3>
+                            <div className="type">
+                                <h3>UseRef <MdTouchApp className='icons' /></h3>
                             </div>
-                            <div className="box">
-                                <h3>UseLayoutEffect</h3>
+                            <div className="type">
+                                <h3>UseLayoutEffect <MdTouchApp className='icons' /></h3>
                             </div>
-                            <div className="box">
-                                <h3>UseEmparativeEffect</h3>
+                            <div className="type">
+                                <h3>UseEmparativeEffect <MdTouchApp className='icons' /></h3>
                             </div>
-                            <div className="box">
-                                <h3>UseDebugValue</h3>
+                            <div className="type">
+                                <h3>UseDebugValue <MdTouchApp className='icons' /></h3>
                             </div>
 
                         </div>
