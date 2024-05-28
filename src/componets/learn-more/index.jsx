@@ -57,7 +57,7 @@ export default function LearnMore() {
                                 <p>While React has a learning curve, it is considered relatively easier to learn compared to some other frameworks due to its simplicity and the abundance of learning resources available.</p>
                             </div>
                             <div className="get-started">
-                                <Link>
+                                <Link to="/getStarted">
                                     <button className='solid'>
                                         Get Started
                                         <FaAngleDoubleRight className='icon' />
