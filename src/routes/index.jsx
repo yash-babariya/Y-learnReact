@@ -5,6 +5,7 @@ import Routes from "../componets/routes";
 import LearnMore from "../componets/learn-more";
 import Hooks from "../componets/hooks";
 import Error from "../componets/error";
+import GetStarted from "../componets/getStarted";
 
 const router = createBrowserRouter([
     {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
             {
                 path: "/learnMore",
                 element: <LearnMore />,
+            },
+            {
+                path: "/getStarted",
+                element: <GetStarted />,
             }
         ],
     },

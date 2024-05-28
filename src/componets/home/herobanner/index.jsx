@@ -18,7 +18,7 @@ export default function HeroBanner() {
                     </div>
                     <div className="hero-buttons">
                         <Link to="/learnMore"><button className='solid'>Learn More</button></Link>
-                        <button className='border'>Get Started</button>
+                        <Link to="/getStarted"><button className='border'>Get Started</button></Link>
                     </div>
                 </section>
             </div>
