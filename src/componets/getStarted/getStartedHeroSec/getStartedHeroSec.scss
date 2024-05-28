@@ -8,7 +8,7 @@
     background-color: #fff;
 
     @media (max-width:768px) {
-        padding: 40px 0;
+        padding: 40px 20px;
     }
 
     .container {
@@ -28,12 +28,43 @@
                     margin: 0 auto;
                     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
+
+                    @media (max-width:576px) {
+                        padding: 10px 20px;
+                        border-radius: 16px;
+                    }
+
+
+                    @media (max-width:400px) {
+                        padding: 8px 16px;
+                        border-radius: 14px;
+                    }
+
                     h2 {
                         font-size: 40px;
                         font-weight: 700;
                         line-height: 1.5;
                         letter-spacing: 0.7px;
                         color: var(--theme-white-text);
+
+                        @media (max-width:1024px) {
+                            font-size: 30px;
+                        }
+
+                        @media (max-width:768px) {
+                            font-size: 26px;
+                        }
+
+                        @media (max-width:576px) {
+                            font-size: 28px;
+                        }
+
+
+                        @media (max-width:420px) {
+                            text-align: center;
+                            font-size: 18px;
+                        }
+
                     }
                 }
             }
@@ -41,18 +72,11 @@
             .hero-steps-buttons {
                 margin-top: 80px;
                 width: 100%;
-                @include space-between;
+                @include space-around;
 
-                @media (max-width:1200px) {
-                    grid-template-columns: repeat(2, 1fr);
-                }
 
                 @media (max-width:768px) {
-                    grid-template-columns: repeat(1, 1fr);
-                }
-
-                @media (max-width:576px) {
-                    gap: 10px;
+                    @include flex-column;
                 }
 
                 .step {
@@ -65,6 +89,31 @@
                     transition: .3s ease-in-out;
 
 
+                    @media (max-width:1024px) {
+                        width: 250px;
+                    }
+
+
+                    @media (max-width:900px) {
+                        width: 200px;
+                    }
+
+
+                    @media (max-width:768px) {
+                        width: 300px;
+                        margin-bottom: 40px;
+                    }
+
+                    @media (max-width:400px) {
+                        width: 250px;
+                        margin-bottom: 40px;
+                    }
+
+
+                    @media (max-width:350px) {
+                        width: 200px;
+                        margin-bottom: 30px;
+                    }
 
                     &:hover {
                         transform: scale(1.05);
@@ -91,6 +140,16 @@
                         height: 200px;
                         background-color: var(--theme-gray-900-background);
 
+
+                        @media (max-width:900px) {
+                            height: 180px;
+                        }
+
+
+                        @media (max-width:768px) {
+                            height: 150px;
+                        }
+
                         h4 {
                             @include flex;
                             gap: 10px;
@@ -102,6 +161,25 @@
                             letter-spacing: 0.7px;
                             color: var(--theme-white-text);
                             line-height: 0.8;
+
+                            @media (max-width:1024px) {
+                                font-size: 30px;
+                            }
+
+
+                            @media (max-width:900px) {
+                                font-size: 25px;
+                            }
+
+
+                            @media (max-width:768px) {
+                                font-size: 36px;
+                            }
+
+
+                            @media (max-width:350px) {
+                                font-size: 25px;
+                            }
                         }
 
                         .rate {
@@ -114,6 +192,20 @@
 
                             .icon {
                                 font-size: 40px;
+
+                                @media (max-width:1024px) {
+                                    font-size: 30px;
+                                }
+
+
+                                @media (max-width:768px) {
+                                    font-size: 40px;
+                                }
+
+
+                                @media (max-width:350px) {
+                                    font-size: 30px;
+                                }
                             }
 
                         }

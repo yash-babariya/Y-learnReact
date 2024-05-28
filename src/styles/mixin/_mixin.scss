@@ -19,6 +19,11 @@
     align-items: center;
     justify-content: space-between;
 }
+@mixin space-around{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 // Grid Mixin
 
