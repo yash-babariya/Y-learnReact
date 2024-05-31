@@ -1,6 +1,7 @@
 import React from 'react';
 import './routerHero.scss';
 import heroRouter from '../../../assets/images/react router.png'
+import { FaAngleDoubleRight } from 'react-icons/fa';
 
 export default function RouterHero() {
     return (
@@ -18,6 +19,9 @@ export default function RouterHero() {
                     </div>
                     <div className="hero-img">
                         <img src={heroRouter} alt="hero-router" />
+                    </div>
+                    <div className="next-button">
+                        <button className='solid'>next <FaAngleDoubleRight className='icon' /></button>
                     </div>
                 </section>
             </div>
