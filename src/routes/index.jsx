@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import DefaultLayout from "./defaultLayout/defaultlayout";
 import Home from "../componets/home";
-import Routes from "../componets/routes";
+import Routes from "../componets/routesSec";
 import LearnMore from "../componets/learn-more";
 import Hooks from "../componets/hooks";
 import Error from "../componets/error";
