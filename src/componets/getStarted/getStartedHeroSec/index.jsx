@@ -5,7 +5,7 @@ import medium from '../../../assets/icons/medium.png';
 import hard from '../../../assets/icons/hard.png';
 import { IoMdStar } from "react-icons/io";
 import { IoMdStarOutline } from "react-icons/io";
-import { FaAngleDoubleRight } from "react-icons/fa";
+
 
 export default function GetStartedHeroSec() {
     return (
